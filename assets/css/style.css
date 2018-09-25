@@ -1,0 +1,41 @@
+body {
+	font-family: 'Lato', sans-serif; 
+/*font-family: 'Roboto', sans-serif;  titulos*/
+/*
+colores
+#2A2E75;  azul zavala
+#DF6209; naranja claro
+#CB4717; naranja zzavala
+#011931; azul oscuro
+*/
+
+}
+
+.cabecera {
+	background: #2A2E75;
+	height: 39px;
+	text-align: right;
+	padding-top: 5px;
+}
+
+.iconos-cabecera {
+ margin: 0 5px ;
+
+}
+
+a.nav-link {
+	padding: 20px 20px;
+}
+a.nav-link:hover ,a.nav-link:focus {
+	background: #DF6209;
+	color: white;
+	padding: 20px 20px;
+	
+}
+
+.background {
+	background-image: url("../images/2.jpg");
+	background-size: cover;
+	padding: 200px 0;
+	margin: 0;
+}
