@@ -12,7 +12,10 @@ colores
 */
 
 }
-
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+}
 .cabecera {
 	background: #2A2E75;
 	height: 39px;
@@ -90,10 +93,7 @@ a.nav-link:hover ,a.nav-link:focus {
     font-size: 18px;
 }
 
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 800;
-}
+
 
 .titulo {
 	margin: 70px 0 35px 0;
