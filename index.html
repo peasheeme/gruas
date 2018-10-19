@@ -11,9 +11,19 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 <!--  owl Carousel -->
+  <!--<link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">-->
+
+ <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- Important Owl stylesheet -->
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+<!--  owl font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+<!-- simpletext rotator -->
+  <link rel="stylesheet" href="assets/css/simpletextrotator.css">
+
 <!-- style -->
 
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
@@ -21,63 +31,94 @@
     <title>Grúas zavala</title>
   </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-    <section class="cabecera">
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="121217441267678"
+  theme_color="#e24511"
+  logged_in_greeting="Hoa, en que podemos ayudarte?"
+  logged_out_greeting="Hoa, en que podemos ayudarte?">
+</div>
+
+  <section class="cabecera">
      <div class="container">
         <div class="row ">
           <div class="col-md-4 offset-md-8">
-          <span class="iconos-cabecera"><a href=""><img src="assets/images/icons/4.png"> </a></span>
-          <span class="iconos-cabecera"><a href=""><img src="assets/images/icons/3.png"></a></span>
-          <span class="iconos-cabecera"><a href=""><img src="assets/images/icons/2.png"></a></span>
-          <span class="iconos-cabecera"><a href=""><img src="assets/images/icons/1.png"></a></span>
+          <span class="iconos-cabecera"><a href="tel:0183363636"><img src="assets/images/icons/4.png" alt="telefono"> </a></span>
+          <span class="iconos-cabecera"><a href="https://www.facebook.com/Gruas-Zavala-121217441267678/"target= "_blank"><img src="assets/images/icons/3.png" alt="facebook"></a></span>
+          <span class="iconos-cabecera"><a href="https://www.instagram.com/gruaszavala/" target= "_blank"><img src="assets/images/icons/2.png" alt="instagram"></a></span>
+          <span class="iconos-cabecera"><a href="https://twitter.com/GRUASZAVALA" target= "_blank"><img src="assets/images/icons/1.png" alt="twiter"></a></span>
       </div>
-         
+
       </div>
      </div>
     </section>
 
-      
+
    <!-- NavBar -->
-    <section class="container">
-        <nav class="navbar navbar-light ">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/icons/logo.png"  alt="">
-            </a>
-            <ul class="nav justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link active" href="#Servicios">Servicios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Gruas">Grúas </a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="#Aauxilio">Auxilio Vial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Mudanzas">Mudanzas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#Contacto">Contacto</a>
-              </li>
-            </ul>
-      </nav>
+    <section id="Barra-Navegacion" class="container">
+      <header>
+         <input type="checkbox" id="btn-menu">
+          <img src="assets/images/icons/logo.png" class="hidden-lg-up logotipo-movil text-right"alt="">
+        <label for="btn-menu"> <img  src="assets/images/icons/menu.png">
+          <!--<i class="fa fa-bars menu" aria-hidden="true"></i>--></label>
+
+        <nav class="menu-responsive navbar navbar-light">
+              <a class="navbar-brand hidden-md-down" href="#">
+                  <img src="assets/images/icons/logo.png" alt="">
+              </a>
+              <ul class="nav justify-content-end col-md-8 col-lg-8 ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#Servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Gruas">Equipo </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Auxilio">Auxilio Vial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Mudanzas">Mudanzas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#Contacto">Contacto</a>
+                </li>
+              </ul>
+        </nav>
+      </header>
     </section>
   <section id="intro" class="section" >
       <div class="container">
          <div class="row">
-           <div class="col-xs-12 col-md-6">
+           <div class="col-xs-12 col-md-6 col-lg-8">
 
             <div class="row container">
-              <div class="col-xs-12  col-md-12"><img class="image" src="assets/images/icons/80.png"></div>
-              <div class="col-xs-12 col-md-12 text-center"> <img class=" row text-center" src="assets/images/icons/telefonodesiempre.png"></div>
+              <div class="col-xs-12  col-md-12 text-left" >
+                </div>
+                <img class="image " src="assets/images/icons/80.png">
+              <h1 class="blanco text-left">Somos la empresa de auxilio vial más importante de Monterrey y su área metropolitana.
+            </h1><br>
+              <h2 class="text-center"><span class="rotate blanco">  Auxilio vial de vehículos  | Salvamentos | Arrastre | Mudanzas  | Almacen de muebles| Transporte de maquinaria.</span></h2>
+
+              <!--<div class="col-xs-12 col-md-12 text-center"> <img class=" row text-center" src="assets/images/icons/telefonodesiempre.png"></div>-->
             </div>
                <!--<img  class="image" src="assets/images/icons/24.png">-->
-               
 
-              
+
+
            </div>
 
-           <div class=" COL-XS-12 cotizar col-md-6 col-lg-5 ml-auto">
+           <div class=" COL-XS-12 cotizar col-md-6 col-lg-4  ml-auto">
             <h2 class="blanco">COTIZA AHORA!</h2>
              <form id="contact-form" method="post" role="form">
               <div class="ajax-hidden">
@@ -105,7 +146,7 @@
                         <option value="infantil">Mudanza oficina</option>
                         <option value="bautizos">Mudanza de arte</option>
                         <option value="comunion">Almacen de muebles</option>
-                        <option value="despedida">Transporte de maquinariaa</option>
+                        <option value="despedida">Transporte de maquinaria</option>
                     </select>
                   </div>
                   <div class="col-6 form-group">
@@ -123,19 +164,38 @@
           </form>
            </div>
            <div class="col-xs-12 col-md-2">
-             
+
            </div>
          </div>
 
         </div><!-- .row -->
+    </section>
+    <section  id="nosotros">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xs-12 ">
+            <h3> <strong>Servicio las 24 horas los 365 días del año. Lo que sea a donde sea.</strong></h3>
+               <h4>Especialistas en arrastre de vehículos, mudanzas de casa hogar y arte, trasporte especializado, grúas industriales, bodegas para almacenaje y auxilio vial. </h4>
+          </div>
+
+        </div>
+        </div>
+
     </section>
 
     <section id="Servicios" class="titulo text-center">
      <div class="container">
        <div class="row">
         <div class="col-xs-12 col-md-12">
-          <h2 class="blue">SERVICIOS</h2>
-            <p>Somos la empresa de auxilio vial más importante de Monterrey y su área metropolitana. <br>Especialistas en el arrastre, salvamentos y auxilio vial de vehículos.</p>
+
+          <h2 class="azul"><span class="orange" style="font-size: 42px;">[ </span> SERVICIOS <span class="orange" style="font-size: 42px;"  >] </span></strong></h2>
+           <!--<p>Somos la empresa de auxilio vial más importante de Monterrey y su área metropolitana. <br>Especialistas en el arrastre, salvamentos y auxilio vial de vehículos.</p>-->
+
+            <h5 class="text-center"><strong>SOMOS GRUÁS ZAVALA QUE YA CONOCE , COMO SIEMPRE CON EL SERVICIO DE SIEMPRE ESPECIALISTAS EN:</strong> </h5>
+
+            <!--<h4 class="text-center">  somos grúas zavala que ya conoce, como siempre con el servicio de siempre especialistas en:  Arrastre de vehículos,
+                          mudanzas de casa hogar y arte, trasporte especializado, grúas industriales, bodegas para almacenaje y auxilio vial.</h4>-->
         </div>
         </div>
       </div>
@@ -144,39 +204,63 @@
     <section class="margen">
       <div class="container">
         <div class="row">
-        <div class="col-xs-12 col-md-6 servicios-margen"> 
-          <h4><img src="assets/images/icons/arrastre.png"> Grúas de arrastre</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+           <!--<div class="col-xs-12 col-md-2">
+             <img src="assets/images/icons/24.png" alt="24 horas los 365 dias">
+          </div>-->
+    <div class="col-xs-12 ">
+     <div class="row text-center">
+       <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+         <img src="assets/images/icons/arrastre.png"  alt="gras de arrastre" class="justify-content-center">
+         <h4>Grúas de arrastre</h4>
+         <p class="text-justify">Para vehículos de cualquier tipo y tamaño, así como vehículos de colección y especiales. </p>
+       </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+          <img src="assets/images/icons/arrastre.png"  alt="gras de arrastre grandes" class="justify-content-center">
+          <h4>Grúas de arrastre grandes</h4>
+          <p class="text-justify">Son equipos con capacidad de 45 tons especiales para tráileres y autobuses Panorámicos. </p>
         </div>
-        <div class="col-xs-12 col-md-6 servicios-margen"> 
-          <h4><img src="assets/images/icons/industriales.png"> Grúas de industriales</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+        <img src="assets/images/icons/industriales.png" alt="gras industriales">
+          <h4> Grúas de industriales</h4>
+          <p class="text-justify">Contamos con grúas de gran capacidad y gran altura para cualquier tipo de carga incluyendo las
+            Maniobras necesarias. </p>
         </div>
-        <div class="col-xs-12 col-md-6 servicios-margen" > 
-          <h4><img src="assets/images/icons/auxilio.png"> Auxilio Vial</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+          <img src="assets/images/icons/mudanzas.png" alt="gras de arrastre">
+          <h4> Mudanzas</h4>
+          <p class="text-justify">Contamos con camiones grandes para muebles de hogar y oficinas y camiones especiales para obras de arte. </p>
         </div>
-        <div class="col-xs-12 col-md-6 servicios-margen"> 
-          <h4><img src="assets/images/icons/mudanzas.png"> Mudanzas</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+          <img src="assets/images/icons/mudanzas.png" alt="gras de arrastre">
+          <h4> Almacenaje</h4>
+          <p class="text-justify">Tenemos contenedores de varias medidas para almacenaje de muebles, artículos deportivos, así como espacios libres para custodia de vehículos como tráileres </p>
         </div>
-      </div> 
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen" >
+        <img src="assets/images/icons/auxilio.png" alt="gras de arrastre">
+          <h4>Auxilio Vial</h4>
+          <p class="text-justify">Este servicio se presta con motocicletas para evitar el tráfico de vehículos.</p>
+        </div>
+
+        </div>
       </div>
+
+          <div class="col-xs-12 col-sm-12 text-center">
+            <a href="tel:8183363636"><img src="assets/images/icons/telefonodesiempre.png" width="150"  alt="el telefono de siempre"  > <h3 style="margin-top: 10px;"><strong>LLAMANOS!</strong></h3> </a>
+          </div>
+        </div>
+
+      </div>
+
  </section>
 
  <section  id="Gruas" class="titulo2  text-center ">
    <div class="container">
        <div class="row">
         <div class="col-xs-12 col-md-12">
-          <h2 >NUESTROS TRANSPORTES</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+
+          <h2 class=""><span class="orange2" style="font-size: 42px;">[ </span>EQUIPO<span class="orange2" style="font-size: 42px;"  > ] </span></strong></h2>
+          <h5 class=""> CONTAMOS CON PLATAFORMAS Y CAMAS BAJAS PARA TRANSPORTAR CUALQUIER TIPO DE MERCANCÍA.</h5>
+
         </div>
         </div>
       </div>
@@ -185,82 +269,96 @@
  <section class="azul-fuerte">
     <div class="tabs container">
       <ul class="row justify-content-center text-center">
-        <li><a href="#arrastre" class=""> <button class="btn-gruas active"><h5>Gruas de Arrastre</h5></button></a></li>
-        <li><a href="#industriales" ><button class="btn-gruas"><h5>Gruas Industriales</h5></button> </a></li>
-        <li><a href="#mudanzas" ><button class="btn-gruas"><h5>Mudanzas</h5></button> </a></li>
+        <li><a href="#arrastre" class=""> <button class="btn-gruas active"><h6>Gruas de Arrastre</h6></button></a></li>
+        <li><a href="#industriales" ><button class="btn-gruas"><h6>Gruas Industriales</h6></button> </a></li>
+        <li><a href="#mudanzas" ><button class="btn-gruas"><h6>Mudanzas</h6></button> </a></li>
       </ul>
-      
+
       <div class="row" id="arrastre">
-       <div class=" owl-carousel owl-theme" >
+
+         <!-- <div id="owl-gruas" class="owl-carousel" > -->
+         <div class="owl-carousel owl-theme">
           <div class="item">
-             <h5 class="naranja text-center">350 Tons</h5>
+             <h5 class="naranja text-center" style="margin: 0 .2px ;">350 Tons</h5>
               <img src="assets/images/350t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo</span>
               </div>
-          </div>
+            </div>
            <div class="item">
-              <h5 class="naranja text-center">275 Tons</h5>
+              <h5 class="naranja text-center" style="margin: 0 .2px;">275 Tons</h5>
               <img src="assets/images/275t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo</span>
               </div>
           </div>
            <div class="item">
-             <h5 class="naranja text-center">250 Tons</h5>
+             <h5 class="naranja text-center"style="margin: 0 .2px;">250 Tons</h5>
               <img src="assets/images/250t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo</span>
               </div>
           </div>
           <div class="item">
-             <h5 class="naranja text-center">25 Tons</h5>
+             <h5 class="naranja text-center"style="margin: 0 .2px;">25 Tons</h5>
               <img src="assets/images/25t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo</span>
               </div>
           </div>
           <div class="item">
-             <h5 class="naranja text-center">17 Tons</h5>
+             <h5 class="naranja text-center"style="margin: 0 .2px;">17 Tons</h5>
               <img src="assets/images/17t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo</span>
               </div>
           </div>
-
-          
-         
-          
-           
-      
           <div class="item">
-             <h5 class="naranja text-center">500 Tons</h5>
+             <h5 class="naranja text-center"style="margin: 0 .2px;">500 Tons</h5>
               <img src="assets/images/500t.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo.</span>
               </div>
           </div>
           <div class="item">
-             <h5 class="naranja text-center">Maniobras Especiales</h5>
+             <h5 class="naranja text-center" style="margin: 0 .2px;">Maniobras E</h5>
               <img src="assets/images/me.png">
               <div class="gruas-description">
                 <span class="">Grúas hidráulicas montadas sobre camión con plataforma de 5 mts. de largo, cap. 8 tons., con 15 mts. de pluma. Especiales para autocargarse, transportar y autodescargarse sin necesidad de otro equipo.</span>
               </div>
           </div>
-       </div>
+
+         </div>
+
+
       </div>
 
       <div class="row" id="industriales">
-        
-        
+        <div id="owl-demo" class="owl-carousel owl-theme">
+
+          <div class="item"><h1>1</h1></div>
+          <div class="item"><h1>2</h1></div>
+          <div class="item"><h1>3</h1></div>
+          <div class="item"><h1>4</h1></div>
+          <div class="item"><h1>5</h1></div>
+          <div class="item"><h1>6</h1></div>
+          <div class="item"><h1>7</h1></div>
+          <div class="item"><h1>8</h1></div>
+          <div class="item"><h1>9</h1></div>
+          <div class="item"><h1>10</h1></div>
+          <div class="item"><h1>11</h1></div>
+          <div class="item"><h1>12</h1></div>
+
+        </div>
+
       </div>
 
       <div class="row" id="mudanzas">
-        
-        
+
+
       </div>
 
-      
+
     </div>
  </section>
 
@@ -268,8 +366,12 @@
      <div class="container">
        <div class="row">
         <div class="col-xs-12 col-md-12">
-          <h2 class="orange">Auxilio vial</h2>
-            <p>Grúas Zavala es una empresa seria, confiable, que lleva más de 75 años otorgando servicio a todos los nuevoleoneses. Cuenta con un personal ampliamente capacitado y unidades de reciente modelo, para brindar un servicio totalmente de Prestigio. Ofreciendo servicios los 365 días del año las 24 horas del día cumpliendo con todas sus expectativas, dando como garantía un tiempo de espera de aproximado de 30 min.</p>
+          <!--<h2 class="orange">Necesitas auxilio vial?</h2>-->
+           <h2 class="azul"><span class="orange" style="font-size: 42px;">[ </span>AUXILIO VIAL <span class="orange" style="font-size: 42px;"  >] </span></strong></h2>
+          <h4 class="azul"> <strong>VAMOS HASTA DONDE TE ENCUENTRES</strong></h4>
+
+
+
         </div>
         </div>
       </div>
@@ -277,24 +379,39 @@
 
 <section class="margen">
     <div class="container">
-        <div class="row">
-        <div class="col-xs-12 col-md-4 servicios-margen"> 
-          <h4><img src="assets/images/icons/arrastre.png"> Grúas de arrastre</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+
+      <div class="row text-center">
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen text-center">
+        <img src="assets/images/icons/llanta.png"><br><br>
+          <h4> Cambio de neumatico</h4>
+          <p class="text-justify">NO PERMITA QUE LE DAÑEN LOS BIRLOS. </p>
         </div>
-        <div class="col-xs-12 col-md-4 servicios-margen"> 
-          <h4><img src="assets/images/icons/industriales.png"> Grúas de industriales</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="col-xs-12 col-sm-6 col-md-4 servicios-margen">
+        <img src="assets/images/icons/gasolina.png"><br><br>
+          <h4>Abasto de gasolina</h4>
+          <p class="text-justify"> ABASTO DE GASOLINA HASTA 20 LITROS MÁXIMO A PRECIO DE ESTACIÓN DE SERVICIO. </p>
         </div>
-        <div class="col-xs-12 col-md-4 servicios-margen" > 
-          <h4><img src="assets/images/icons/auxilio.png"> Auxilio Vial</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="col-xs-12 col-sm-12 col-md-4 servicios-margen" >
+          <img src="assets/images/icons/electricidad.png"><br><br>
+          <h4> Corriente electrica</h4>
+          <p class="text-justify">PASO DE CORRIENTE CON EQUIPO ESPECIAL. NO DAÑA COMPUTADORA DE AUTO. </p>
         </div>
-        
-      </div> 
+
+      </div>
+      <div class="row align-self-center" >
+        <div class="col-xs-12 col-sm-12  col-lg-7 text-left loquesea"  >
+          <img src="assets/images/icons/auxiliovial.png" class="loquesea">
+        </div>
+        <div class="col-xs-12 col-sm-12  col col-lg-5 text-left auxilio-vial" >
+          <h4 class="orange2">Somos la empresa de auxilio vial más importante de Monterrey y su área metropolitana. </h4>
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="col-xs-12 col-md-12 text-center"><button class="btn-contacto"> Contáctanos </button></div>
+
+      </div>
+
     </div>
  </section>
 
@@ -302,28 +419,32 @@
    <div class="container">
        <div class="row">
         <div class="col-xs-12 col-md-12">
-          <h2>Mudanzas</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.</p>
+
+          <h2 class=""><span class="orange2" style="font-size: 42px;">[ </span>MUDANZAS<span class="orange2" style="font-size: 42px;"  > ] </span></strong></h2>
+          <h5 class=""> CONTAMOS CON CAMIONES GRANDES PARA MUEBLES DE HOGAR Y OFICINAS, ADEMAS CONTAMOS CON CAMIONES ESPECIALES PARA OBRAS DE ARTE.</h5>
+
         </div>
         </div>
       </div>
  </section>
 
  <section class="azul-fuerte">
-    
-     sdfghjklkjhgfds 
-    
+   <div class="container">
+     <p  style="color:white;"> Escribir aqui un texto!!</p>
+
+   </div>
+
+
  </section>
 
  <section id="Contacto" class="titulo text-center">
      <div class="container">
        <div class="row">
         <div class="col-xs-12 col-md-12">
-          <h2>Contacto</h2>
-            <p>Si tienes alguna pregunta, por favor no dudes en enviarnos un mensaje.</p>
+
+          <h2 class="azul"><span class="orange" style="font-size: 42px;">[ </span> CONTACTO <span class="orange" style="font-size: 42px;"  >] </span></strong></h2>
+          <h4 class="azul"> <strong>NOSOTROS NOS ENCARGAREMOS DE TODO</strong></h4>
+
         </div>
         </div>
       </div>
@@ -332,27 +453,23 @@
 <section class="margen">
     <div class="container">
       <div class="row text-center">
-        <div class="col-xs-12 col-md-4 servicios-margen"> 
-          <a href="tel:8183363636"><img src="assets/images/icons/tel.png" alt="telefono"><br>83 36 36 36</a>
+        <div class="col-xs-12 col-md-3 servicios-margen">
+          <a href="tel:8183363636"><img src="assets/images/icons/tel.png" alt="telefono"><br> <strong>83 36 36 36</strong></a>
         </div>
-        <div class="col-xs-12 col-md-4 servicios-margen"> 
-          <a href="mailto:servicioaclientes@gruaszavala.com"><img src="assets/images/icons/mail.png" alt="e-mail"> <br>servicioaclientes@gruaszavala.com</a>
+        <div class="col-xs-12 col-md-3 servicios-margen">
+          <a href="mailto:servicioaclientes@gruaszavala.com"><img src="assets/images/icons/mail.png" alt="e-mail"> <br><strong>servicioaclientes@gruaszavala.com</strong></a>
           <p> </p>
         </div>
-       <!-- <div class="col-xs-12 col-md-3 servicios-margen" > 
+        <div class="col-xs-12 col-md-6 servicios-margen"> <br><br>
+          <h4 class="azul"><strong>LLAMANOS!!</strong></h4>
+        </div>
+       <!-- <div class="col-xs-12 col-md-3 servicios-margen" >
           <img src="assets/images/icons/ubicacion.png" alt="ubicacion"><br>Antiguo Camino a Villa De Garcia 1475 B Hacienda El Palmar Santa Catarina, Nuevo Leon, Mexico CP: 66367
           <p> </p>
         </div>-->
-        <div class="col-xs-12 col-md-4 servicios-margen" > 
-          <div class="row ">
-            <a href="https://www.facebook.com/Gruas-Zavala-121217441267678/"><img class="iconos-cabecera" src="assets/images/icons/fb.png" alt="facebook"></a>
-            <a href="https://www.instagram.com/gruaszavala/"><img class="iconos-cabecera" src="assets/images/icons/insta.png" alt="instagram"></a>
-            <a href="https://twitter.com/GRUASZAVALA"><img class="iconos-cabecera" src="assets/images/icons/tw.png" alt="twiter"></a>
-             
-          </div>
-        </div>
-    </div> 
- 
+
+    </div>
+
     <div class="row">
       <div class="col-xs-12 col-sm-6">
           <form id="contact-form" method="post" role="form">
@@ -375,10 +492,21 @@
               <div class="ajax-response"></div><!-- Displays status when submitting form -->
           </form>
       </div>
-    
+
       <div class="col-xs-12 col-sm-6 text-center">
-        <a href="tel:8183363636"><img src="assets/images/icons/telefonodesiempre.png" alt="el telefono de siempre"></a> <br>
+        <a href="tel:8183363636"><img src="assets/images/icons/telefonodesiempre.png" alt="el telefono de siempre"></a> <br> <br>
+        <h4 class="azul"><strong>SIGUENOS</strong></h4>
+
+            <a href="https://www.facebook.com/Gruas-Zavala-121217441267678/"><img class="iconos-cabecera" src="assets/images/icons/fb.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/gruaszavala/"><img class="iconos-cabecera" src="assets/images/icons/insta.png" alt="instagram"></a>
+            <a href="https://twitter.com/GRUASZAVALA"><img class="iconos-cabecera" src="assets/images/icons/tw.png" alt="twiter"></a>
+
+
          </div>
+
+         <div class="col-xs-12 offset-md-8 col-md-4 servicios-margen" >
+
+        </div>
       </div>
     </div>
  </section>
@@ -386,19 +514,19 @@
  <footer class="azul-fuerte padding footer-color">
       <div class="container">
         <div class="row  ">
-          <div class="col-xs-12 col-md-4 col-lg-6 ">
-            <h3 class="footer">GRÚAS JAIME ZAVALA</h3>
-            <p>Somos la empresa de auxilio vial más importante de Monterrey y su area metropolitana. 
+          <div class="col-xs-12  col-lg-6 ">
+            <h3 class="footer"><strong>GRÚAS JAIME ZAVALA</strong></h3>
+            <p>Somos la empresa de auxilio vial más importante de Monterrey y su area metropolitana.
             Especialistas en el arrastre, salvamentos y auxilio vial de vehiculos y depósito, así como, grúas industriales, transporte especializado, etc.
-            Servimos las "24 HORAS DEL DÍA, LOS 365 DÍAS DEL AÑO" moviendo " LO QUE SEA A DONDE SEA", Con más de 80 años de experiencia. 
-            
+            Servimos las <strong>"24 HORAS DEL DÍA, LOS 365 DÍAS DEL AÑO" </strong> moviendo <strong> " LO QUE SEA A DONDE SEA"</strong>, Con más de 80 años de experiencia.
+
             <p class="copy">
-              © 2018 Eureka Tecnologías, Todos los derechos reservados.
+              © 2018 GRÚAS JAIME ZAVALA, Todos los derechos reservados.
             </p>
-            <p>Sitio web Diseñado por <a href="https://www.kalamedia.mx/"><img src="assets/images/icons/kalamedia.png"></a></p>
+            <p>Sitio web Diseñado por <a href="https://www.kalamedia.mx/"> <img src="assets/images/icons/kalamedia.png"></a></p>
           </div>
-          
-          <div class="col-xs-6 col-md-4 col-lg-3 margen-movil">
+
+          <div class="col-xs-6  col-lg-3 margen-movil">
             <H5 ><strong>SERVICIOS</strong></H5>
             <a class="footer-link" href="#Servicios"><span >SERVICIOS</span></a> <br>
             <a class="footer-link" href="#Gruas"><span>GRÚAS</span></a><br>
@@ -406,39 +534,34 @@
             <a class="footer-link" href="#Mudanzas"><span>MUDANZA</span></a><br>
             <a class="footer-link" href="#Contacto"><span>CONTACTO</span></a>
           </div>
-          <div class="col-xs-6 col-md-4 col-lg-3 margen-movil2">
+          <div class="col-xs-6  col-lg-3 margen-movil2">
             <h5 class="margen-movil"><strong>CONTACTANOS</strong></h5>
-            
-             <a class="hidden-sm-down" href="tel:018120489445">
-              <img src="assets/images/icons/tel.png" alt="phone"> 
-               <span class="footer-link">83 363636</span> </a>
-            <a  class="hidden-md-up" href="tel:018120489445">
-              <img src="assets/images/icons/tel.png" alt="phone"></a>
-              <br> <br>
-                   
-             <a class="hidden-sm-down" href="mailto:info@eurekatecnologias.com">
+
+             <a class="footer-link" href="tel:0183363636"><img src="assets/images/icons/tel.png" alt="phone"> </a>
+
+
+             <a class="footer-link" href="mailto:servicioaclientes@gruaszavala.com">
                     <img  src="assets/images/icons/mail.png" alt="mail">
                     <span class="footer-link" ></span>
-                  </a>
-                  <a class="hidden-md-up" href="mailto:info@eurekatecnologias.com">
-                    <img  src="assets/images/icons/mail.png" alt="mail">
-                   
-                  </a>
+            </a>
+
                   <br><br>
             <h5 class="margen-movil2">SIGUENOS</h5>
-                  
-               <a class="hidden-sm-down" href="https://www.facebook.com/eurekatecnologias/">
-                 <img  src="assets/images/icons/fb.png" alt="facebook"><span class="footer-link"></span> 
-                 <img src="assets/images/icons/insta.png" alt="instagram"><span class="footer-link"></span>  
-                 <img src="assets/images/icons/tw.png" alt="twiter">  <span class="footer-link"></span> 
-               </a>
-               <a class="hidden-md-up" href="https://www.facebook.com/eurekatecnologias/">
-                 <img src="assets/images/icons/fb.png" alt="facebook"> 
-                 <img src="assets/images/icons/insta.png" alt="instagram"> 
-                 <img src="assets/images/icons/tw.png" alt="twiter">  
-               </a>
-                    
-          </div>
+
+               <a class="hidden-sm-down" href="https://www.facebook.com/Gruas-Zavala-121217441267678/"target="_blank">
+                 <img  src="assets/images/icons/fb.png" alt="facebook"><span class="footer-link"></span></a>
+                <a class="hidden-sm-down" href="https://www.instagram.com/gruaszavala/" target="_blank">
+                  <img src="assets/images/icons/insta.png" alt="instagram"><span class="footer-link"></span></a>
+                <a  class="hidden-sm-down" href="https://twitter.com/GRUASZAVALA" target="_blank">
+                   <img src="assets/images/icons/tw.png" alt="twiter">  <span class="footer-link"></span></a>
+
+               <a class="hidden-md-up"  href="https://www.facebook.com/Gruas-Zavala-121217441267678/"target="_blank">
+                 <img src="assets/images/icons/fb.png" alt="facebook"> </a>
+                <a class="hidden-md-up" href="https://www.instagram.com/gruaszavala/" target="_blank">
+                  <img src="assets/images/icons/insta.png" alt="instagram"></a>
+                <a class="hidden-md-up" href="https://twitter.com/GRUASZAVALA" target="_blank">
+                   <img src="assets/images/icons/tw.png" alt="twiter"></a>
+        </div>
 
           </div><!-- .col -->
 
@@ -459,8 +582,13 @@
      <!-- tabs-->
     <script type="text/javascript" src="assets/js/jquery.tabslet.min.js"></script>
     <!-- carusel-->
-     <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-     
+     <!--<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>-->
+     <script type="text/javascript" src="assets/js/owl.carousell.min.js"></script>
+     <!-- Simple text rotator-->
+     <script type="text/javascript" src="assets/js/jquery.simple-text-rotator.min.js"></script>
+
+
+
      <!----------------Custom --------------->
     <script type="text/javascript" src="assets/js/custom.js"></script>
 
@@ -469,8 +597,18 @@
 
       $('#intro').backstretch([
       'assets/images/2.jpg',
-      
+
     ], {duration: 3000, fade: 750});
+    </script>
+    <script>
+    $(document).ready(function() {
+
+  $("#owl-demo").owlCarousel({
+    navigation : true
+  });
+
+});
+
     </script>
 
   </body>
